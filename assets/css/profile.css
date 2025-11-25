@@ -1,0 +1,39 @@
+/* Common styles */
+.shadow {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0.8rem;
+}
+
+/* Container for the settings section */
+.settings {
+    display: flex;
+    border-right: 1px solid black;
+}
+
+/* Navigation on the sidebar */
+.profile-tab-nav {
+    min-width: 250px;
+}
+
+/* Content area for tabs */
+.tab-content {
+    flex: 1;
+}
+
+/* Spacing for form groups */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+/* Styling for navigation links */
+.nav-pills a.nav-link {
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+    color: #333;
+}
+
+/* Icon styles within navigation links */
+.nav-pills a.nav-link i {
+    width: 20px;
+}

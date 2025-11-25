@@ -1,0 +1,89 @@
+register(6/6/2023)
+Backend
+1. https://www.youtube.com/watch?v=ZG0e-esjMAk&t=2305s
+    (Madu Web Tech)
+2. https://www.youtube.com/watch?v=qEm2bZZdMsE&t=1805s
+    (Thapa Technical)
+Frontend
+1. https://www.youtube.com/watch?v=9XKRNfPrNpM&t=184s
+    (Coding lab)
+
+
+
+Login and logout system(6/7/2023)
+1. https://www.youtube.com/watch?v=E5LWaJ9Cydo&t=1391s
+    (Madu Web Tech)
+2. https://www.youtube.com/watch?v=F65zrW7Jbus
+    (Thapa Technical)
+
+
+Dashboard (6/8/2023)
+Frontend
+1. https://www.youtube.com/watch?v=m3aC6t_9RK8&t=300s    
+
+
+
+Algorithm
+reorder point algorithm(ROP)
+
+In inventory management, the Reorder Point (ROP) algorithm is often used to trigger when stock should be replenished. The reorder point is typically based on the product's lead time (how long it takes to receive an order) and the demand rate (how fast the product is sold or used).
+
+Here’s an overview of a few algorithms and models you can use, depending on your requirements:
+
+1. Basic Reorder Point Formula (ROP):
+The simplest algorithm is based on this formula:
+
+Reorder Point
+=
+Lead Time Demand
+Reorder Point=Lead Time Demand
+Where:
+
+Lead Time Demand (LTD) = Average demand per period * Lead time in periods
+Lead time is the time it takes for a new order to arrive after it’s placed (e.g., in days).
+Demand rate is typically the average number of units sold per day.
+This formula can be expanded as:
+
+Reorder Point
+=
+(
+Average Daily Demand
+×
+Lead Time
+)
++
+Safety Stock
+Reorder Point=(Average Daily Demand×Lead Time)+Safety Stock
+Safety Stock is used to account for variability in demand or lead time.
+
+Steps for Implementation:
+
+Calculate average daily demand (i.e., the average number of units sold per day over a period).
+Calculate lead time (time from placing an order to receiving the stock).
+Optionally, include safety stock (extra stock to prevent stockouts during unexpected demand spikes or delays in delivery).
+
+
+
+// Check if search term is provided
+    if (isset($_GET['search'])) {
+        $searchTerm = mysqli_real_escape_string($con, $_GET['search']);
+        // SQL query with LIKE operator for searching product name
+        $query = "SELECT * FROM product WHERE product_name LIKE '%$searchTerm%' ORDER BY product_id DESC";
+    } else {
+        // If no search term, show all products
+        $query = "SELECT * FROM product ORDER BY product_id DESC";
+    }
+    $result = mysqli_query($con, $query);
+
+//search
+        $(document).ready(function(){
+            var table = $('#table').DataTable();
+
+            // Event listener for search input
+            $('#searchInput').on('keyup', function() {
+                table.search(this.value).draw();  // Apply the search term to the DataTable
+            });
+        });
+
+
+
