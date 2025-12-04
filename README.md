@@ -1,10 +1,10 @@
-##📚 Stationery Management System
-###📝 Overview
+## 📚 Stationery Management System
+📝 Overview
 
 The Stationery Management System is a web-based application designed to efficiently manage stationery inventory, track orders, and generate reports.
 This project was developed as a college project using PHP and MySQL, showcasing core skills in web development, database handling, and simple system automation.
 
-###⭐ Features
+### ⭐ Features
 
 - 🗂️ Inventory Management: Add, update, and delete stationery items
 
@@ -14,7 +14,7 @@ This project was developed as a college project using PHP and MySQL, showcasing 
 
 - 🖥️ User-Friendly Interface: Simple and clean UI for easy navigation
 
-###🛠️ Technologies Used
+### 🛠️ Technologies Used
 
 - Backend: PHP
 
